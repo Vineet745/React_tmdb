@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
-import Details from "./Component/Details";
 import Movie from "./Component/Movie";
 import Nav from "./Component/Nav";
+import SingleImage from "./Component/SingleImage";
 import Tvshow from "./Component/Tvshow";
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Movie/>}>
-          <Route path="/:id" element={<Details/>}></Route>
+         
         </Route>
+        <Route path="/single-m/:id" element={< SingleImage/>}></Route>
         <Route path="/tvshow" element={<Tvshow/>}></Route>
 
       </Routes>

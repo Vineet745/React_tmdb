@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Futura Pt medium;
+}
+
+.maindiv{
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+.imagediv{
+    width: 23vw;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 60vh;
+
+}
+.imagediv:hover{
+    cursor: pointer;
+}
+.imagediv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightdiv{
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid white; */
+}
+.title{
+    display: flex;
+    
+}
