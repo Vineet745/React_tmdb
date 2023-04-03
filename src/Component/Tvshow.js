@@ -25,7 +25,7 @@ const Tvshow = () => {
       <h1 className='text-warning ms-4 mt-3'>Popular Tv Shows</h1>
       <div className='d-flex flex-wrap align-items-center justify-content-start m-3'>
         {tvshow.map((show) => (
-          <Link style={{ textDecoration: "none" }}>
+          <Link to={`/single-show/${show.id}`}  style={{ textDecoration: "none" }}>
             <div className={showcss.maindiv}>
               <div key={show.id} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500${show.backdrop_path})` }} className={showcss.imgdiv}>
               </div>

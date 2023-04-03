@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { asyncloadimageAction } from '../store/Action/Action'
 import {Link} from "react-router-dom"
@@ -8,6 +8,7 @@ import loader from "../assets/loader.gif"
 
 const Movie = () => {
   const dispatch = useDispatch();
+  
   const { movies } = useSelector((state) => state.moviefetch)
 
   console.log(movies)
